@@ -1,11 +1,10 @@
 import React from 'react'
+import Header from './components/Header'
 
 function App() {
   return (
     <div>
-      <h1 className='bg-red-700'>
-        React is working fine!
-      </h1>
+      <Header/>
     </div>
   )
 }
