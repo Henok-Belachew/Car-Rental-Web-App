@@ -13,3 +13,5 @@ root.render(
     <App />
   </BrowserRouter>
 );
+
+// ReactDOM.render()
