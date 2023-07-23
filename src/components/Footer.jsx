@@ -26,7 +26,7 @@ function Footer() {
         },
     ]
   return (
-    <div className='bg-white flex gap-5 px-[67px] max-lg:grid max-md:block  md-lg:grid-cols-2'>
+    <div className='bg-white flex gap-5 max-lg:grid max-md:block px-[67px]  md-lg:grid-cols-2 mt-10 py-10 relative z-[5]'>
       <div className='w-3/12 max-lg:w-full max-lg:text-center flex gap-3 flex-col justify-between'>
         <h1 className='text-xl'> <span className='font-[600]'>CAR</span> Rental</h1>
         <p className='text-[#706f7b] font-[400]'> We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs.</p>

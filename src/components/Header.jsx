@@ -33,7 +33,7 @@ function Header() {
     },
   ]
   return (
-    <nav className='h-[100px] w-max-full justify-between gap-4 relative z-10 pt-[13px] px-[67px] flex items-center' >
+    <nav className='h-[100px] w-max-full justify-between gap-4 z-10 pt-[13px] px-[67px] flex items-center relative z-3' >
         <img src={logo} className='h-[51px] max-lg:h-[40px]' alt="" />
         
         {/* md:flex md:items-center md:pb-0 pb-12 absolute md:static md:justify-between bg-white md:z-auto z-[-1] left-0 w-full md:w-full md:pl-0 pl-9  ${open ? 'top-[100px] ':'top-[-500px]'}` */}

@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 
 function App() {
   return (
-    <div className='font-rubik'>
+    <div className='font-rubik relative bg-background'>
       <Header/>
       <Outlet/>
       <Footer/>
