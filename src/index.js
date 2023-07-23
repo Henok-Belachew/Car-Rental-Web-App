@@ -4,14 +4,36 @@ import './index.css';
 import './font.css'
 import App from './App';
 
-import {BrowserRouter} from 'react-router-dom';
+// ---------- IMPORTING PAGES ---------------- //
 
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Models from './pages/Models';
+import OurTeam from './pages/OurTeam';
+import Testimonials from './pages/Testimonials';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+// ---------- ========= --------- ==== ------- //
+
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+
+ReactDOM.render(
   <BrowserRouter>
-    <App />
-  </BrowserRouter>
+
+      <Routes>
+          <Route path='/' element={<App/>}>
+
+                <Route index element={<Home/>} />
+                <Route path='/About' element={<About/>} />
+                <Route path='/Models' element={<Models/>} />
+                <Route path='/Testimonials' element={<Testimonials/>} />
+                <Route path='/OurTeam' element={<OurTeam/>} />
+                <Route path='/Contact' element={<Contact/>} />
+
+          </Route>
+      </Routes>
+
+  </BrowserRouter>, document.getElementById('root')
 );
 
 // ReactDOM.render()
