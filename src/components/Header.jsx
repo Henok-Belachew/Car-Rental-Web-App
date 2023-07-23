@@ -7,11 +7,11 @@ function Header() {
   const [open, setOpen] = useState(false)
   return (
     <nav className='h-[100px] font-rubik w-max-full justify-between gap-4 pt-[13px] px-[67px] flex items-center' >
-        <img src={logo} className='h-[51px] ' alt="" />
+        <img src={logo} className='h-[51px] max-lg:h-[40px]' alt="" />
         
-        
-        <div className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:justify-between bg-white md:z-auto z-[-1] left-0 w-full md:w-full md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}`}>
-            <ul className='flex font-[500] w-7/12 justify-between mx-auto max-lg:ml-[25px] max-lg:flex-col max-lg:w-11/12' >
+        {/* md:flex md:items-center md:pb-0 pb-12 absolute md:static md:justify-between bg-white md:z-auto z-[-1] left-0 w-full md:w-full md:pl-0 pl-9  ${open ? 'top-[100px] ':'top-[-500px]'}` */}
+        <div className={`max-lg:flex-col max-lg:top-[100px] max-lg:pl-9 ${open ? 'max-lg:left-[0px]' : 'max-lg:left-[-100vw]'} max-lg:pb-7 max-lg:absolute max-lg:z-[-1] transition-left duration-[700ms] ease-in flex w-full`}>
+            <ul className='flex font-[500] max-lg:text-center w-7/12 justify-between mx-auto max-lg:mx-auto max-lg:flex-col max-lg:w-11/12' >
             <li className='cursor-pointer hover:text-accent py-5'>Home</li>
             <li className='cursor-pointer hover:text-accent py-5'>About</li>
             <li className='cursor-pointer hover:text-accent py-5'>Models</li>
@@ -20,11 +20,9 @@ function Header() {
             <li className='cursor-pointer hover:text-accent py-5'>Contact</li>
             </ul>
 
-            <div className='flex  max-lg:ml-[25px] gap-10 items-center'>
-            <a href="" className='hover:text-accent'>Sign In</a>
-            <button className='bg-accent text-white {
-                
-            } px-[32px] py-[13px] rounded-md'>Register</button>
+            <div className='flex max-lg:flex-col max-lg:w-11/12 max-lg:mx-auto max-lg:gap-0 gap-10 items-center'>
+            <a href="" className='hover:text-accent max-lg:py-5 max-lg:w-full max-lg:text-center'>Sign In</a>
+            <button className='bg-accent text-white max-lg:w-full px-[32px] py-[13px] rounded-md max-lg:py-5'>Register</button>
             </div>
         
         </div>
