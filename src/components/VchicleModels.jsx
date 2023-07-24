@@ -149,15 +149,15 @@ function VchicleModels() {
       ];
   return (
     <div className='px-[67px] py-16'>
-        <div className='w-[40%] mx-auto flex flex-col gap-5 text-center'>
+        <div className='w-[40%] max-lg:w-[80%] mx-auto flex flex-col gap-5 text-center'>
             <h1 className='font-[500] text-[22px]'>Vehicle Models</h1>
             <h1 className='font-[700] text-[48px]'>Our rental fleet</h1>
             <p className='font-[400] text-[18px] text-darkish'>Choose from a variety of our amazing vehicles to rent for your next adventure or business trip.</p>
         </div>
 
 
-        <div className='flex gap-6 mt-8 justify-stretch items-stretch w-full'>
-            <div className='flex flex-col gap-2 w-[255px]'>
+        <div className='flex max-lg:flex-col gap-6 mt-8 justify-stretch items-stretch w-full'>
+            <div className='flex flex-col max-lg:mx-auto gap-2 w-[255px]'>
                 {tab_btns.map((tab)=>{
                     return(
                         <buttons onClick={tab.OnClick} className={`p-5 cursor-pointer font-[500] text-[19px] ${tab.ClassName}`}>

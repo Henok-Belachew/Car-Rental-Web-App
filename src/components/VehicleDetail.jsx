@@ -24,11 +24,11 @@ function VehicleDetail(vehicle) {
     }, [vehicle])
     
   return (
-    <div className='flex justify-between items-center gap-6 flex-grow'>
+    <div className='flex max-md:flex-col justify-between items-center gap-6 flex-grow'>
       
-      <img className='w-[60%] mx-auto' src={targetVehicle.TabImage} alt="" />
+      <img className='w-[60%] max-md:w-[80%] mx-auto' src={targetVehicle.TabImage} alt="" />
 
-      <div className='w-[30%]'>
+      <div className='w-[30%] max-md:w-[80%]'>
         <th className='bg-accent w-full block border-2 border-black py-4'>
             <span className='font-[600] w-full text-[18px] text-white'>{`${targetVehicle.TabPrice}`} <span className='font-[400] text-[18px] text-white'>/ rent per day</span></span>
         </th>

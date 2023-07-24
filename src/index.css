@@ -1418,6 +1418,14 @@ video {
   .max-md\:block {
     display: block;
   }
+
+  .max-md\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .max-md\:flex-col {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 1023px) {
