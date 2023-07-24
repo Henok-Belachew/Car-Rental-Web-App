@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+// npx tailwindcss -i ./src/input.css -o ./src/index.css --watch
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
@@ -18,7 +19,9 @@ module.exports = {
       colors: {
         'accent': "#FF4D30",
         'white': "#ffff",
-        'background': "#F8F8F8"
+        'background': "#F8F8F8",
+        // 'darkwhite': '#706f7b',
+        // 'darkish': '#F8F8F8'
       },
     },
     plugins: [],

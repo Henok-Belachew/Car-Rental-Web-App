@@ -3,3 +3,7 @@
 .font-rubik {
     font-family: 'Rubik', sans-serif;
 }
+
+::-webkit-scrollbar {
+    display: none;
+  }

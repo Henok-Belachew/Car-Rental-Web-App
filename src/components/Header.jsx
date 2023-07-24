@@ -33,8 +33,8 @@ function Header() {
     },
   ]
   return (
-    <nav className='h-[100px] w-max-full justify-between gap-4 z-10 pt-[13px] px-[67px] flex items-center relative z-3' >
-        <img src={logo} className='h-[51px] max-lg:h-[40px]' alt="" />
+    <nav className='h-[100px] w-max-full justify-between gap-4 z-10 pt-[13px] px-[67px] max-sm:px-[30px] flex items-center relative z-3' >
+        <img src={logo} className='h-[51px] max-sm:h-[34px] md-lg:h-[40px]' alt="" />
         
         {/* md:flex md:items-center md:pb-0 pb-12 absolute md:static md:justify-between bg-white md:z-auto z-[-1] left-0 w-full md:w-full md:pl-0 pl-9  ${open ? 'top-[100px] ':'top-[-500px]'}` */}
         <div className={`max-lg:flex-col max-lg:top-[100px] max-lg:bg-white max-lg:shadow-lg  max-lg:pl-9 ${open ? 'max-lg:left-[0px]' : 'max-lg:left-[-100vw]'} max-lg:pb-7 max-lg:absolute max-lg:z-[-1] transition-left duration-[700ms] ease-in flex w-full`}>
