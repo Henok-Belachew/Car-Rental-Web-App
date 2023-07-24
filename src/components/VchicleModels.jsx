@@ -151,7 +151,7 @@ function VchicleModels() {
     <div className='px-[67px] py-16'>
         <div className='w-[40%] max-lg:w-[80%] mx-auto flex flex-col gap-5 text-center'>
             <h1 className='font-[500] text-[22px]'>Vehicle Models</h1>
-            <h1 className='font-[700] text-[48px]'>Our rental fleet</h1>
+            <h1 className='font-[700] text-[48px] max-sm:text-[40px] leading-[45px]'>Our rental fleet</h1>
             <p className='font-[400] text-[18px] text-darkish'>Choose from a variety of our amazing vehicles to rent for your next adventure or business trip.</p>
         </div>
 

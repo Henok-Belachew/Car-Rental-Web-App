@@ -43,7 +43,7 @@ function FAQ() {
 
           <div className='w-[60%] mx-auto text-center flex flex-col gap-3 relative z-[2]'>
               <h1 className='font-[600] text-[22px]'>FAQ</h1>
-              <h1 className='font-[700] text-[48px] max-lg:text-[36px]'>Frequently Asked Questions</h1>
+              <h1 className='font-[700] text-[48px] max-lg:text-[36px] max-sm:leading-[46px]'>Frequently Asked Questions</h1>
               <p>Frequently Asked Questions About the Car Rental Booking Process on Our Website: Answers to Common Concerns and Inquiries.</p>
           </div>
 

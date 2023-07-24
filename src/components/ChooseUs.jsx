@@ -47,7 +47,7 @@ function ChooseUs() {
 
                 <div className='flex flex-col gap-4 w-[40%] max-lg:w-full max-lg:text-center'>
                     <h1 className='font-[600] text-[22px]' >Why Schoose Us</h1>
-                    <h1 className='font-[700] text-[38px] w-[85%] max-lg:mx-auto leading-[58px]' >Best Valued deals you will ever find</h1>
+                    <h1 className='font-[700] text-[38px] w-[85%] max-lg:mx-auto max-sm:leading-[46px] leading-[58px]' >Best Valued deals you will ever find</h1>
 
                     <p className='font-[400] text-[16px] mt-5 text-darkish ' >
                     Discover the best deals you'll ever find with our unbeatable offers. We're dedicated to providing you with the best value for your money, so you can enjoy top-quality services and products without breaking the bank. Our deals are designed to give you the ultimate renting experience, so don't miss out on your chance to save big.
