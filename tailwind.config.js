@@ -20,7 +20,7 @@ module.exports = {
         'accent': "#FF4D30",
         'white': "#ffff",
         'background': "#F8F8F8",
-        // 'darkwhite': '#706f7b',
+        'darkish': '#706f7b',
         // 'darkish': '#F8F8F8'
       },
     },

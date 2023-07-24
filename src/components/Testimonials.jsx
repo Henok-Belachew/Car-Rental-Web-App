@@ -54,7 +54,7 @@ function TestCard({revP, revImg, revName, revLoc}) {
 
 function Testimonials() {
   return (
-    <div className='px-[67px] py-[120px]'>
+    <div className='px-[67px] pt-10 pb-[120px]'>
       <div className='text-center flex flex-col gap-5 w-[60%] mx-auto'>
         <h1 className='font-[600] text-[22px]'>Reviewed by People</h1>
         <h1 className='font-[700] text-[48px] max-lg:text-[36px] '>Client's Testimonials</h1>

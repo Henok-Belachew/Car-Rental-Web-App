@@ -6,6 +6,7 @@ import BookCar from '../components/BookCar'
 import PlanTrip from '../components/PlanTrip'
 import FlightAdd from '../components/FlightAdd'
 import Testimonials from '../components/Testimonials'
+import ChooseUs from '../components/ChooseUs'
 
 function Home() {
   const [add, setAdd] = useState(true)
@@ -16,7 +17,9 @@ function Home() {
         <BookCar/>
         <PlanTrip/>
         {add && <FlightAdd setAdd={setAdd}/>}
+        <ChooseUs/>
         <Testimonials/>
+        
         <AddSection/>
       
     </div>

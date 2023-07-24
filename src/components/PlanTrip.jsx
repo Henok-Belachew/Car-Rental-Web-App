@@ -6,7 +6,7 @@ import img3 from '../assets/CompIntroImages/sc.png'
 
 const Card = ({disctription, title, img}) => {
     return (
-        <div  className='text-center flex flex-col gap-4'>
+        <div  className='text-center flex flex-col gap-4 max-lg:w-[60%] max-lg:mx-auto'>
             <img className='mx-auto h-[140px]' src={img} alt="" />
             <h1  className='font-[700] text-[22px]'>{title}</h1>
             <p className='font-[400] text-[16px]'>{disctription}</p>
