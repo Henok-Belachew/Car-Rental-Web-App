@@ -1,36 +1,85 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Bg from '../assets/Book-images/book-bg.png'
-import Field from './Field'
+import {FaCar, FaSearchLocation} from 'react-icons/fa'
+import {SlCalender} from 'react-icons/sl'
+import DropDown from './DropDown'
 
-const carType = [
-    {value: 'Audi Q8 e-tron', label: 'Audi Q8 e-tron'},
-    {value: 'BMW 5 Series', label: 'BMW 5 Series'},
-    {value: 'Mercedes-Benz CLA', label: 'Mercedes-Benz CLA'},
-    {value: 'Toyota GR Supra', label: 'Toyota GR Supra'},
-    {value: 'Ford Mustang', label: 'Ford Mustang'},
-    {value: 'Lexus 2018', label: 'Lexus 2018'}
-  ]
 
 const location = [
-    {value: 'Addis Ababa', label: 'Addis Ababa'},
-    {value: 'Hawassa', label: 'Hawassa'},
-    {value: 'Dilla', label: 'Dilla'},
-    {value: 'Adama', label: 'Adama'},
-    {value: 'Bishofetu', label: 'Bishofetu'}
+    'Addis Ababa',
+    'Hawassa',
+    'Mojo',
+    'Adama',
+    'Bishofetu',
+]
+
+const carType = [
+
+  'Audi Q8 e-tron',
+  'BMW 5 Series',
+  'Mercedes-Benz CLA',
+  'Toyota GR Supra',
+  'Ford Mustang',
+  'Lexus 2018',
+
 ]
 
 function BookCar() {
+  const [opt1, setOpt1] = useState(false)
+  const [opt2, setOpt2] = useState(false)
+  const [opt3, setOpt3] = useState(false)
 
   return (
     <div className='mx-[67px] p-12 bg-white z-[5] mt-[150px] relative flex flex-col gap-4'>
       <h1 className=' relative z-[4] font-[700] text-[22px]'>Book a car</h1>
-      <div className='grid grid-cols-3 gap-x-6 gap-y-8 relative z-[4]'>
-            <Field defaultValue={{'label': "Car", value: "custom"}}  id={1} label="Select Your Car Type" option={carType}/>
-            <Field defaultValue={{'label': "Select Pick-up location", value: "custom"}} id={2} label="Pick-up" option={location}/>
-            <Field defaultValue={{'label': "Select Drop-off location", value: "custom"}}  id={3} label="Drop-off" option={location}/>
-            <input className='border-solid border-[1px] px-3' type="date" />
-            <input className='border-solid border-[1px] px-3' type="date" />
-            <button className='bg-accent py-[13px] font-[500] text-[18px] text-white'>Search</button>
+      <div className='grid grid-cols-3 grid-rows-2 max-lg:grid-cols-1 max-lg:grid-rows-6 gap-x-6 gap-y-8 relative z-[4]'>
+        {/* DropDown({placeholder, options, optState, setOptState}) */}
+        <div>
+            <span className='flex gap-3 mb-2 items-center font-[500]'>        
+                  <FaCar className='text-[20px] text-accent'/>    
+                  Select Your Car Type     
+            </span>
+            <DropDown id={0} options={carType} optState={opt1} setOptState={setOpt1} othStates ={[setOpt2, setOpt3]} placeholder="Select Your Car Type" />
+        </div>
+
+        <div>
+            <span className='flex gap-3 mb-2 items-center font-[500]'>        
+                  <FaSearchLocation className='text-[20px] text-accent'/>    
+                  Select pick-up location  
+            </span>
+            <DropDown id={1} options={location} optState={opt2} setOptState={setOpt2} othStates ={[setOpt1, setOpt3]}  placeholder="Select pick-up location" />
+        </div>
+
+        <div>
+            <span className='flex gap-3 mb-2 items-center font-[500]'>        
+                  <FaSearchLocation className='text-[20px] text-accent'/>    
+                  Select drop-off location  
+            </span>
+            <DropDown id={2} options={location} optState={opt3} setOptState={setOpt3} othStates ={[setOpt1, setOpt2]}  placeholder="Select drop-off location" />
+        </div>
+
+        <div className='flex flex-col'>
+            <span className='flex gap-3 mb-2 items-center font-[500]'>        
+                  <SlCalender className='text-[20px] text-accent'/>    
+                  Pick-up Date
+            </span>
+            <input className='border-solid border-[1px] flex-1 cursor-pointer border-black px-3 w-full' type="date" />
+        </div>
+
+        <div className='flex flex-col'>
+            <span className='flex gap-3 mb-2 items-center font-[500]'>        
+                  <SlCalender className='text-[20px] text-accent'/>    
+                  Drop-off Date
+            </span>
+            <input className='border-solid flex-1 cursor-pointer border-[1px] border-black px-3' type="date" />
+        </div>
+           
+            
+            
+
+            
+            
+            <button className='bg-accent py-[13px] font-[500] text-[18px] h-[70%] mt-7 text-white'>Search</button>
 
       </div>
       <img className='absolute z-[3] top-0' src={Bg} alt="" />
