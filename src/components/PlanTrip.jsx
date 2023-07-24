@@ -6,7 +6,7 @@ import img3 from '../assets/CompIntroImages/sc.png'
 
 const Card = ({disctription, title, img}) => {
     return (
-        <div  className='text-center flex flex-col gap-4 max-lg:w-[60%] max-lg:mx-auto'>
+        <div  className='text-center flex flex-col gap-4 md-lg:w-[60%] max-lg:mx-auto'>
             <img className='mx-auto h-[140px]' src={img} alt="" />
             <h1  className='font-[700] text-[22px]'>{title}</h1>
             <p className='font-[400] text-[16px]'>{disctription}</p>
@@ -19,10 +19,10 @@ function PlanTrip() {
     const dis2 = "Our knowledgeable and friendly operators are always ready to help with any questions or concerns."
     const dis3 = "Whether you're hitting the open road, we've got you covered with our wide range of cars. No time!"
   return (
-    <div className='px-[67px] flex flex-col gap-[70px] py-[120px]'>
+    <div className='px-[67px] flex flex-col gap-[70px] py-[120px] max-sm:py-[50px]'>
             <div className='text-center'>
                 <h1 className='font-[600] text-[22px]'>Plan your trip now</h1>
-                <h1 className='font-[700] text-[48px]'>Quick & easy car rental</h1>
+                <h1 className='font-[700] mt-3 text-[48px] max-sm:text-[36px]'>Quick & easy car rental</h1>
             </div>
 
             <div className='flex gap-8 max-lg:flex-col text-center'>
