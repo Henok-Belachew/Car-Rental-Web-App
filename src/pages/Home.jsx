@@ -8,6 +8,7 @@ import FlightAdd from '../components/FlightAdd'
 import Testimonials from '../components/Testimonials'
 import ChooseUs from '../components/ChooseUs'
 import FAQ from '../components/FAQ'
+import VchicleModels from '../components/VchicleModels'
 
 function Home() {
   const [add, setAdd] = useState(true)
@@ -17,6 +18,7 @@ function Home() {
         <img className='absolute right-0 top-0 z-[2] max-lg:hidden' src={Bg} alt="" />
         <BookCar/>
         <PlanTrip/>
+        <VchicleModels/>
         {add && <FlightAdd setAdd={setAdd}/>}
         <ChooseUs/>
         <Testimonials/>

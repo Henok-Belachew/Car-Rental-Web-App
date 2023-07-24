@@ -21,8 +21,10 @@ module.exports = {
         'white': "#ffff",
         'background': "#F8F8F8",
         'darkish': '#706f7b',
+        'inactiveBtn': "#E9E9E9"
         // 'darkish': '#F8F8F8'
       },
+
     },
     plugins: [],
 }}
