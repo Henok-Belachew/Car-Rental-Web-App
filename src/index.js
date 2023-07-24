@@ -27,7 +27,7 @@ ReactDOM.render(
                 <Route path='/About' element={<About/>} />
                 <Route path='/Models' element={<Models/>} />
                 <Route path='/Testimonials' element={<Testimonials/>} />
-                <Route path='/OurTeam' element={<OurTeam/>} />
+                <Route path='/Our Team' element={<OurTeam/>} />
                 <Route path='/Contact' element={<Contact/>} />
 
           </Route>

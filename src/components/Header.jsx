@@ -2,36 +2,14 @@ import React from 'react'
 import logo from '../assets/logo.png'
 import {FaBars, FaXmark} from 'react-icons/fa6'
 import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 function Header() {
+
+  
   const [open, setOpen] = useState(false)
 
-  const navs = [
-    {
-      menu: "Home",
-      link: "#"
-    },
-    {
-      menu: "About",
-      link: "#"
-    },
-    {
-      menu: "Models",
-      link: "#"
-    },
-    {
-      menu: "Testimonials",
-      link: "#"
-    },
-    {
-      menu: "Our Team",
-      link: "#"
-    },
-    {
-      menu: "Contact",
-      link: "#"
-    },
-  ]
+  const navs = ["Home","About","Models", "Testimonials", "Our Team", "Contact"  ]
   return (
     <nav className='h-[100px] w-max-full justify-between gap-4 z-10 pt-[13px] px-[67px] max-sm:px-[30px] flex items-center relative z-3' >
         <img src={logo} className='h-[51px] max-sm:h-[34px] md-lg:h-[40px]' alt="" />
@@ -41,9 +19,9 @@ function Header() {
             <ul className='flex font-[500]  max-lg:text-center w-7/12 justify-between mx-auto max-lg:mx-auto max-lg:flex-col max-sm:w-11/12' >
             
             {
-              navs.map((nav)=>{
+              navs.map((nav)=>{ 
                 return(
-                  <li className='cursor-pointer hover:text-accent py-5 ' href={nav.link}>{nav.menu}</li>
+                  <NavLink onClick={()=>{setOpen(false)}} to={nav === "Home" ? "" : `/${nav}`} style={({isActive}) => isActive ? {color: "#FF4D30"} : null} className='cursor-pointer hover:text-accent py-5 '>{nav}</NavLink>
                 )
               })
             }
