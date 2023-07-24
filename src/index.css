@@ -628,6 +628,10 @@ video {
   top: 100px;
 }
 
+.top-\[50\%\] {
+  top: 50%;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -638,6 +642,10 @@ video {
 
 .z-\[-1\] {
   z-index: -1;
+}
+
+.z-\[0\] {
+  z-index: 0;
 }
 
 .z-\[2\] {
@@ -711,6 +719,10 @@ video {
   margin-top: 45px;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -723,6 +735,10 @@ video {
   display: none;
 }
 
+.h-0 {
+  height: 0px;
+}
+
 .h-\[100px\] {
   height: 100px;
 }
@@ -733,6 +749,12 @@ video {
 
 .h-\[51px\] {
   height: 51px;
+}
+
+.h-fit {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .min-h-full {
@@ -763,6 +785,10 @@ video {
   width: 310px;
 }
 
+.w-\[350px\] {
+  width: 350px;
+}
+
 .w-\[40\%\] {
   width: 40%;
 }
@@ -777,6 +803,10 @@ video {
 
 .w-\[500px\] {
   width: 500px;
+}
+
+.w-\[55\%\] {
+  width: 55%;
 }
 
 .w-\[60\%\] {
@@ -801,6 +831,17 @@ video {
 
 .min-w-full {
   min-width: 100%;
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -953,6 +994,10 @@ video {
   padding: 3rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .p-\[13px\] {
   padding: 13px;
 }
@@ -960,6 +1005,11 @@ video {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .px-\[32px\] {
@@ -995,6 +1045,11 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 .py-\[120px\] {
@@ -1039,6 +1094,10 @@ video {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .text-\[16px\] {
   font-size: 16px;
 }
@@ -1049,6 +1108,10 @@ video {
 
 .text-\[20px\] {
   font-size: 20px;
+}
+
+.text-\[21px\] {
+  font-size: 21px;
 }
 
 .text-\[22px\] {
@@ -1104,6 +1167,10 @@ video {
   font-weight: 700;
 }
 
+.leading-\[24px\] {
+  line-height: 24px;
+}
+
 .leading-\[58px\] {
   line-height: 58px;
 }
@@ -1126,6 +1193,11 @@ video {
   color: rgb(255 77 48 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-darkish {
   --tw-text-opacity: 1;
   color: rgb(112 111 123 / var(--tw-text-opacity));
@@ -1141,9 +1213,23 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-accent {
   --tw-shadow-color: #FF4D30;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.duration-\[400ms\] {
+  transition-duration: 400ms;
+}
+
+.duration-\[7000ms\] {
+  transition-duration: 7000ms;
 }
 
 .duration-\[700ms\] {
@@ -1247,6 +1333,10 @@ video {
     text-align: center;
   }
 
+  .max-sm\:text-\[18px\] {
+    font-size: 18px;
+  }
+
   .max-sm\:text-\[32px\] {
     font-size: 32px;
   }
@@ -1306,6 +1396,10 @@ video {
 
   .max-lg\:w-11\/12 {
     width: 91.666667%;
+  }
+
+  .max-lg\:w-\[50\%\] {
+    width: 50%;
   }
 
   .max-lg\:w-\[60\%\] {
@@ -1371,6 +1465,14 @@ video {
 
   .max-lg\:leading-\[45px\] {
     line-height: 45px;
+  }
+
+  .max-lg\:text-\[\] {
+    color: ;
+  }
+
+  .max-lg\:text-\[36\] {
+    color: 36;
   }
 
   .max-lg\:shadow-lg {

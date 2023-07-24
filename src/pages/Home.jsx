@@ -7,6 +7,7 @@ import PlanTrip from '../components/PlanTrip'
 import FlightAdd from '../components/FlightAdd'
 import Testimonials from '../components/Testimonials'
 import ChooseUs from '../components/ChooseUs'
+import FAQ from '../components/FAQ'
 
 function Home() {
   const [add, setAdd] = useState(true)
@@ -19,7 +20,7 @@ function Home() {
         {add && <FlightAdd setAdd={setAdd}/>}
         <ChooseUs/>
         <Testimonials/>
-        
+        <FAQ/>
         <AddSection/>
       
     </div>
