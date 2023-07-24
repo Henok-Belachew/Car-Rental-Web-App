@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import carBg from '../assets/FaqImages/sideBg.png'
+import {FaAngleDown} from 'react-icons/fa6'
 
 function Que({QueId, id, setId, Que, Answer}) {
     
@@ -21,7 +22,7 @@ function Que({QueId, id, setId, Que, Answer}) {
             }}
             className={` flex shadow-md duration-[400ms] cursor-pointer ${QueId === id ? "bg-accent" : "bg-white"} ${QueId === id ? "text-white" : "text-black"} flex justify-between py-7 px-5`}>
                 <h1 className='font-[400] text-[21px] md-lg max-sm:text-[18px]'>{Que}</h1>
-                <span  >V</span>
+                <FaAngleDown className='font-extrabold' />
             </div>
 
             {/* ANSWER */}
