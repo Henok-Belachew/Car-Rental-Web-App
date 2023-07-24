@@ -21,7 +21,7 @@ function Header() {
             {
               navs.map((nav)=>{ 
                 return(
-                  <NavLink onClick={()=>{setOpen(false)}} to={nav === "Home" ? "" : `/${nav}`} style={({isActive}) => isActive ? {color: "#FF4D30"} : null} className='cursor-pointer hover:text-accent py-5 '>{nav}</NavLink>
+                  <NavLink onClick={()=>{setOpen(false)}} to={nav === "Home" ? "" : `/${nav}`} style={({isActive}) => isActive ? {color: "#FF4D30"} : null} className='cursor-pointer delay-[200ms] transition-colors ease hover:text-accent py-5 '>{nav}</NavLink>
                 )
               })
             }
