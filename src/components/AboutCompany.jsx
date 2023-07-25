@@ -6,7 +6,7 @@ import worker from '../assets/AboutCompImages/worker.jpg'
 
 function AboutCompany() {
   return (
-    <div className='relative top-[-100px] flex justify-center gap-10 px-[67px] py-[64px] max-lg:flex-col '>
+    <div className='relative top-[-100px] flex justify-center gap-10 px-[67px] max-sm:px-[30px] py-[64px] max-lg:flex-col '>
       <img  className='w-[432px] max-lg:mx-auto rounded-md self-start object-cover '  src={worker} alt="" />
 
 
@@ -18,17 +18,17 @@ function AboutCompany() {
         </p>
 
         <div className='flex justify-between max-sm:flex-col mt-4 gap-5'>
-            <div className='flex flex-col gap-5'>
-                <img className='w-[64px] max-lg:mx-auto' src={car} alt="" />
-                <span className='font-[600] text-[32px]'>85 <span className='font-[400] text-[16px]' >Car Types</span> </span>
+            <div className='flex max-sm:justify-between flex-col max-sm:flex-row max-sm:items-center gap-5'>
+                <img className='w-[64px] md-lg:mx-auto' src={car} alt="" />
+                <span className='font-[600] text-[32px] max-sm:text-[23px]'>85 <span className='font-[400] text-[16px]' >Car Types</span> </span>
             </div>
-            <div className='flex flex-col gap-5'>
-                <img className='w-[64px] max-lg:mx-auto' src={outlet} alt="" />
-                <span className='font-[600] text-[32px]'>65 <span className='font-[400] text-[16px]' >Rental Outlets</span> </span>
+            <div className='flex flex-col gap-5 max-sm:justify-center max-sm:flex-row max-sm:items-center'>
+                <img className='w-[64px] md-lg:mx-auto' src={outlet} alt="" />
+                <span className='font-[600] text-[32px] max-sm:text-[22px]'>65 <span className='font-[400] max-sm-[15px] text-[16px]' >Rental Outlet</span> </span>
             </div>
-            <div className='flex flex-col gap-5'>
-                <img className='w-[64px] max-lg:mx-auto' src={shop} alt="" />
-                <span className='font-[600] text-[32px]'>85 <span className='font-[400] text-[16px]' >Repair Shop</span> </span>
+            <div className='flex flex-col gap-5 max-sm:flex-row max-sm:justify-center max-sm:items-center'>
+                <img className='w-[64px] md-lg:mx-auto' src={shop} alt="" />
+                <span className='font-[600] text-[32px] max-sm:text-[23px]'>85 <span className='font-[400] text-[16px]' >Repair Shop</span> </span>
             </div>
         </div>
 

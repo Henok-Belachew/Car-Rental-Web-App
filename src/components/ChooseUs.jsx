@@ -39,7 +39,7 @@ function Feature({img, title, dis}) {
 
 function ChooseUs() {
   return (
-    <div className='px-[67px] pb-12 relative'>
+    <div className='px-[67px] max-sm:px-[30px] pb-12 relative'>
       <img src={cars} alt="" className='relative my-3 z-[2]  mx-auto' />
 
 

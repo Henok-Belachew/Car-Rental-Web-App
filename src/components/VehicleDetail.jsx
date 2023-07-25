@@ -28,7 +28,7 @@ function VehicleDetail(vehicle) {
       
       <img className='w-[60%] max-md:w-[80%] mx-auto' src={targetVehicle.TabImage} alt="" />
 
-      <div className='w-[30%] max-md:w-[80%]'>
+      <div className='w-[30%] max-md:w-[80%] max-sm:w-full'>
         <th className='bg-accent w-full block border-2 border-black py-4'>
             <span className='font-[600] w-full text-[18px] text-white'>{`${targetVehicle.TabPrice}`} <span className='font-[400] text-[18px] text-white'>/ rent per day</span></span>
         </th>

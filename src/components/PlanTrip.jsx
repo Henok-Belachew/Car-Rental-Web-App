@@ -19,7 +19,7 @@ function PlanTrip() {
     const dis2 = "Our knowledgeable and friendly operators are always ready to help with any questions or concerns."
     const dis3 = "Whether you're hitting the open road, we've got you covered with our wide range of cars. No time!"
   return (
-    <div className='px-[67px] flex flex-col gap-[70px] py-[120px] max-sm:py-[50px]'>
+    <div className='px-[67px] max-sm:px-[30px] flex flex-col gap-[70px] py-[120px] max-sm:py-[50px]'>
             <div className='text-center'>
                 <h1 className='font-[600] text-[22px]'>Plan your trip now</h1>
                 <h1 className='font-[700] mt-3 text-[48px] max-sm:text-[36px]'>Quick & easy car rental</h1>

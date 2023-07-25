@@ -30,11 +30,11 @@ function BookCar() {
   const [opt3, setOpt3] = useState(false)
 
   return (
-    <div className='mx-[67px] p-12 bg-white z-[5] mt-[150px] relative flex flex-col gap-4'>
+    <div className='mx-[67px] max-sm:mx-[30px] p-12 max-sm:p-6 bg-white z-[5] mt-[150px] relative flex flex-col gap-4'>
       <h1 className=' relative z-[4] font-[700] text-[22px]'>Book a car</h1>
       <div className='grid grid-cols-3 grid-rows-2 max-lg:grid-cols-1 max-lg:grid-rows-6 gap-x-6 gap-y-8 relative z-[4]'>
         {/* DropDown({placeholder, options, optState, setOptState}) */}
-        <div>
+        <div className='w-full'>
             <span className='flex gap-3 mb-2 items-center font-[500]'>        
                   <FaCar className='text-[20px] text-accent'/>    
                   Select Your Car Type     
@@ -71,7 +71,7 @@ function BookCar() {
                   <SlCalender className='text-[20px] text-accent'/>    
                   Drop-off Date
             </span>
-            <input className='border-solid flex-1 cursor-pointer border-[1px] border-black px-3' type="date" />
+            <input className='border-solid flex-1 w-full cursor-pointer border-[1px] border-black px-3' type="date" />
         </div>
            
             

@@ -5,7 +5,7 @@ import phone from '../assets/DownloadImages/dlbg.png'
 
 function AddSection() {
   return (
-    <div className='flex justify-between bg-background  relative z-[5] px-[67px] max-sm:px-[30px] py-12 pt-32 max-lg:flex-col max-lg:text-center'>
+    <div className='flex justify-between bg-background  relative z-[5] px-[67px]  max-sm:px-[30px] py-12 pt-32 max-lg:flex-col max-lg:text-center'>
         <div className='w-[500px] max-lg:w-[80%] flex flex-col gap-5 max-lg:mx-auto'>
             <h1 className='font-[700] text-[48px] max-sm:text-[32px] text-center leading-[72px] max-sm:leading-[40px]'>
             Download our app to get most out of it
