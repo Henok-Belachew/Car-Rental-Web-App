@@ -4,7 +4,7 @@ import {BsWhatsapp} from 'react-icons/bs'
 
 function WhatsApp() {
   return (
-    <div className='relative h-[178px]'>
+    <div className='relative h-[178px] max-sm:text-center'>
       
         <div className='h-full drop-shadow-md w-full relative z-[3] items-center justify-center flex px-[67px] max-lg:flex-col max-lg:gap-5  gap-10'>
             <span className='font-[700] text-[32px] max-lg:text-[30px] w-fit block text-white'>Get in touch on whatsapp</span>
