@@ -682,14 +682,14 @@ video {
   margin-right: auto;
 }
 
-.my-3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .mb-2 {
@@ -880,6 +880,10 @@ video {
 
 .w-\[64px\] {
   width: 64px;
+}
+
+.w-\[75\%\] {
+  width: 75%;
 }
 
 .w-\[80\%\] {
@@ -1156,6 +1160,10 @@ video {
   padding: 3rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -1249,6 +1257,10 @@ video {
 
 .pb-20 {
   padding-bottom: 5rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
 }
 
 .pb-\[120px\] {
@@ -1416,16 +1428,12 @@ video {
   opacity: 0.1;
 }
 
-.opacity-\[90\%\] {
-  opacity: 90%;
-}
-
-.opacity-60 {
-  opacity: 0.6;
-}
-
 .opacity-50 {
   opacity: 0.5;
+}
+
+.opacity-\[90\%\] {
+  opacity: 90%;
 }
 
 .shadow-lg {
@@ -1437,6 +1445,12 @@ video {
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1555,10 +1569,6 @@ video {
     margin-top: 1.25rem;
   }
 
-  .max-sm\:grid {
-    display: grid;
-  }
-
   .max-sm\:h-\[34px\] {
     height: 34px;
   }
@@ -1571,20 +1581,8 @@ video {
     width: 80%;
   }
 
-  .max-sm\:w-\[\] {
-    width: ;
-  }
-
-  .max-sm\:w-\[70\%\] {
-    width: 70%;
-  }
-
   .max-sm\:min-w-\[350px\] {
     min-width: 350px;
-  }
-
-  .max-sm\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .max-sm\:flex-col {
@@ -1647,16 +1645,20 @@ video {
     display: block;
   }
 
+  .max-md\:w-\[55\%\] {
+    width: 55%;
+  }
+
+  .max-md\:w-\[70\%\] {
+    width: 70%;
+  }
+
   .max-md\:w-\[80\%\] {
     width: 80%;
   }
 
   .max-md\:w-full {
     width: 100%;
-  }
-
-  .max-md\:w-\[70\%\] {
-    width: 70%;
   }
 
   .max-md\:grid-cols-1 {
@@ -1814,10 +1816,6 @@ video {
   .md-lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .md-lg\:grid {
-    display: grid;
   }
 
   .md-lg\:h-\[40px\] {
