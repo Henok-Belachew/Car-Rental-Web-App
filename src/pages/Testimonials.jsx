@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroCar from '../assets/HeroImages/HeroTopImg.png'
 import WhatsApp from '../components/WhatsApp'
+import Testimoniales from '../components/Testimonials'
 
 function Testimonials() {
   return (
@@ -16,7 +17,7 @@ function Testimonials() {
       <h1 className='absolute z-[3] top-0 bg-white opacity-[90%] text-black font-[700] text-[48px] text-center h-full w-full'></h1>
     
     </div>
-
+    <Testimoniales/>
     <WhatsApp/>
     </div>
   )
